@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | main </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+            /* background: linear-gradient(45deg, #e4d18d,
+                    #e94d4dcf, #e92828d0,
+                    #caf521da, #4bed56d8,
+                    #23efab, #2738f1e2); */
+                    background-image: url("th.jpeg");
+                    background-position: center;
+                    background-size: cover;
+            backdrop-filter: blur(10px);
+            background-repeat: no-repeat;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            /* background: linear-gradient(203deg, #e91e36, #d6cf42db); */
+            padding: 3rem 1rem;
+            width: 40%;
+            border-radius: 1rem;
+            background-color: #1271bc26;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            font-family: sans-serif;
+            margin: 2rem 0rem;
+        }
+
+        .userInput {
+            font-size: 20px;
+            padding: 19px 22px;
+            margin: 33px 0px 0px;
+            border-radius: 9px;
+            outline: none;
+            border: none;
+            background-color: #00000070;
+            color: white;
+        }
+
+        input::placeholder {
+            color: rgb(207, 194, 194);
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+
+        .btns {
+            justify-content: space-evenly;
+            display: flex;
+            gap: 30px;
+        }
+
+        .btn {
+            padding: 14px 0;
+            width: 46%;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #1140ac;
+            transition: .4s linear;
+            cursor: pointer;
+            font-size: 1.4rem;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #1140ac;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+
+        <h3>Log In </h3>
+
+        <input class="userInput" type="text" placeholder="Username">
+        <input class="userInput" type="password" placeholder="Password">
+
+        <p>
+            <input type="checkbox" class="checkboxinput">
+            <a href="#"> forgot password ?</a>
+        </p>
+        <div class="btns">
+            <button class="btn">Log in </button>
+            <button class="btn">Cancel</button>
+        </div>
+    </div>
+</body>
+
+</html>
