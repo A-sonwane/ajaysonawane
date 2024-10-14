@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="calculator">
+
+        <input type="text" id="display" disabled>
+       
+        <div class="buttons">
+            <button onclick="appendCharacter('7')" class="bn5">7</button>
+            <button onclick="appendCharacter('8')" class="bn5">8</button>
+            <button onclick="appendCharacter('9')" class="bn5">9</button>
+            <button onclick="appendCharacter('/')" class="bn5">/</button>
+            <button onclick="appendCharacter('4')" class="bn5">4</button>
+            <button onclick="appendCharacter('5')" class="bn5">5</button>
+            <button onclick="appendCharacter('6')" class="bn5">6</button>
+            <button onclick="appendCharacter('*')" class="bn5">*</button>
+            <button onclick="appendCharacter('1')" class="bn5">1</button>
+            <button onclick="appendCharacter('2')" class="bn5">2</button>
+            <button onclick="appendCharacter('3')" class="bn5">3</button>
+            <button onclick="appendCharacter('-')" class="bn5">-</button>
+            <button onclick="appendCharacter('0')" class="bn5">0</button>
+            <button onclick="appendCharacter('.')" class="bn5">.</button>
+            <button onclick="appendCharacter('+')" class="bn5">+</button>
+            <button onclick="calculate()" class="equals-btn">=</button>
+            <button onclick="clearDisplay()" class="reset-btn">AC</button>
+            <button onclick="deleteChar()" class="reset-btn">CE</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
